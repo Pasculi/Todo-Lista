@@ -1,0 +1,10 @@
+Configuración Básica
+Configurar Nombre que salen en los commits
+
+	git config --global user.name "dasdo"
+Configurar Email
+
+	git config --global user.email jorge.sepulveda.turpie@gmail.com
+Marco de colores para los comando
+
+	git config --global color.ui true
