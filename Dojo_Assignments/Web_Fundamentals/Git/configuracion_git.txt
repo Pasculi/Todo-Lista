@@ -1,10 +1,15 @@
 Configuración Básica
 Configurar Nombre que salen en los commits
 
-	git config --global user.name "dasdo"
+	git config --global user.name "Jorge Sepúlveda Turpie"
 Configurar Email
 
 	git config --global user.email jorge.sepulveda.turpie@gmail.com
+
+Listar configuración
+	
+	git config --list
+
 Marco de colores para los comando
 
 	git config --global color.ui true
