@@ -6,3 +6,4 @@ Es un stack gratuito y de código abierto diseñado para proporcionar a los desa
 rápidos de aplicaciones web basadas en MERN. Uno de los principales beneficios de MERN es que un solo lenguaje, JavaScript, se ejecuta en 
 todos los niveles de la aplicación. 
 Esto lo convierte en un stack eficiente y moderno para el desarrollo web.
+Aqui se estarán colocando todos los trabajos que se realizarán en el Bootcamp Desarrollo Web JavaScript MERN (MongoDB - Express - React - Node.js)
