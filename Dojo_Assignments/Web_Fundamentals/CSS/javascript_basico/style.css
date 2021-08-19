@@ -5,37 +5,42 @@
 }
 body{
     background-color: #1B345D;
-    width: 1024px;
+    
 }
 .header{
     background-color: #CF3036;
-    width: 1024px;
-    min-height: 90px;
+    width: 1200px;
+    height: 90px;
     border-radius: 15px;
     margin: 10px;
 }
 .logo{
     color:#C3D3EB;
     padding-top: 25px;
+    padding-left: 20px;
     margin-left: 20px;
 }
 .sidebar{
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #2A7D8C;
     width:200px;
     height: 250px;
     margin-left: 10px;
-    padding-left: 30px;
+    padding-left: 20px;
+    padding-right:10px;
     padding-top:20px;
     color:#4AC7E2 ;
     border-radius: 15px;
     display:inline-block;
-    vertical-align: top;
-
+    vertical-align: top;    
+}
+ a{
+    color:#4AC7E2;
     
 }
-.sidebar a{
-    color:#4AC7E2;
+code{
+    color:#5251E5;
+    font-size: 15px;
 }
 #primario li{
     text-indent: 10px;
@@ -44,23 +49,34 @@ body{
 #secundario li{
     text-indent: 32px;
 }
+
 .main{
     display:inline-block;
     background-color: #000;
-    width: 715px;
-    height: 500px;
+    width: 900px;
+    min-height: 500px;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left:25px;
-    color:#FFF;
+    color:#B2C8DD;
     padding:20px;
     text-align: justify;
+    margin-bottom: 10px;
+}
+#terciario li{
+    text-indent:5px;
+    list-style-position: inside;
+}
+#terciario li p a{
+    text-indent:10px;
 }
 .footer{
-    background-color: #7a8ca8;
-    width:1024px;
-    height: 60px;
+    background-color: #5D6673;
+    width: 1155px;
+    height: 25px;
     border-radius:15px;
     margin-left:10px;
     margin-top:10px;
+    color: #B2C8DD;
+    padding:20px;
 }
