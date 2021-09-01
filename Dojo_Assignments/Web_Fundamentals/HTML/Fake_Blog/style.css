@@ -10,3 +10,7 @@ th{
 tr:nth-child(even){
     background-color: rgb(197, 212, 197);
 }
+img{
+    border-radius:50%;
+    box-shadow: 0px 10px 10px -6px black;
+}
