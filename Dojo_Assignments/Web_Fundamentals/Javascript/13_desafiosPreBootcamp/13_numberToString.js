@@ -3,15 +3,13 @@
 =            13 Desafíos de Algoritmos        =
 =============================================*/
 
-function noNeg(arr) {
-     //your code here 
+function numToStr(arr) {
+     //your code here
      for(var i=0;i<arr.length;i++){
-         if(arr[i]< 0){
-            arr[i] = 0;
+         if(arr[i]<0){
+             arr[i]="Dojo";
          }
      }
      return arr; 
  }
-
-/*=====  Cualquier numero negativo dentro del arreglo reemplazar por 0  ======*/
-
+/*=====  Pasar de numero negativo a String con la palabra "Dojo"  ======*/
