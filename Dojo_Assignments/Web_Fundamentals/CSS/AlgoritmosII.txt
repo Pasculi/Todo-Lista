@@ -1,0 +1,94 @@
+1. - Dojo
+
+2. - hello, x is 15
+
+3. - n is, 3, x is, 18
+
+4. - x = n is, 3 // n is, 5 
+	x= 6 + 10 = 16
+
+5. - x = c is, 5 // c is, 8
+	x is, 13
+
+6. - c is, 5 // c is,3 // c is, 6 // c is, 3 // c is, 5 // c is, 8
+
+	x is, 19
+
+7. - 15, 15
+
+***********************************************************************
+
+1.- 2,3
+
+2.- 6 - 10
+
+3.- 3,7 pillería
+
+4.- 15,15,10,15
+
+5.- 0,2,4,6,8,10,12,14
+
+6.- 0,1,2 // 0,1,2
+
+	0,0,0,0,1,2,0,2,4 
+
+7.- 0,1,2  // 0,1,2,3,4
+
+0,0,0,0,0,0,1,2,3,4,0,2,4,6,8,15
+
+
+2 Parte
+
+Print 1 to x
+Por favor, completa los siguientes códigos para que la función imprima (print) 
+todos los enteros (integers) de 1 a x. Si x es negativo, haz que se muestre 
+(print/log) “número negativo” y que la función devuelva falso.
+
+
+function printUpTo(x) {
+  // your code here
+  if(x<0){
+    return false
+  }else{
+    for(var i=1;i<=x;i++){
+      console.log(i)
+    }
+  }
+}
+printUpTo(1000); // debería imprimir todos los enteros de 1 to 1000
+y = printUpTo(-10); // debería imprimir false
+console.log(y); // debería imprimir false
+
+
+PrintSumArray
+Completa el código a continuación para que la función 
+entregue la suma de todos los valores en un array dado.
+
+function printSumArray(x) {
+  var sum = 0;
+  for(var i=0; i<x.length; i++) {
+    //your code here
+    sum+=x[i];
+  }
+  return sum;
+}
+console.log( printSumArray([1,2,3]) ); // debería imprimir 6
+
+
+Bonus: LargestElement
+Crea una función que entregue el elemento más grande (largest element) en un array. 
+Por ejemplo largestElement([1,30,5,7]) 
+debiera dar como resultado 30.
+
+function largestElement(arr) {
+  var max = arr[0];
+  for(var i=0;i<arr.length;i++){
+    if(max<arr[i]){
+      max=arr[i];
+    }    
+  }
+  return max;
+}
+z = largestElement([1,30,15,7]); 
+console.log(z);  
+

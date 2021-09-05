@@ -48,3 +48,8 @@ function sum_odd(){
      return sum;
 
 }
+
+function a() {
+     console.log('hello');
+     }
+     console.log('Dojo');
