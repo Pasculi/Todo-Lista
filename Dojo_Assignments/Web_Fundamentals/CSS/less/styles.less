@@ -1,0 +1,53 @@
+/*Variables*/
+@color_h1:#075207;
+@color_p:#f19640;
+@color_s:#0613cf;
+@color_h2:#afaeaeb7;
+@color-card:#cec8c8;
+@width-banner:600px;
+@height-banner:450px;
+@margin_right:13px;
+/*Fin variables*/
+/*Maxins funciones*/
+.borde_redondos(@radio:10px){
+     border-radius: @radio;
+}
+.padding_container(@padding:20px){
+     padding:@padding;
+}
+
+/*Fin funciones*/
+
+h1{
+     color:@color_h1;
+}
+p{
+     color:@color_s;
+     .padding_container(20px)
+}
+h2{
+     color:@color_h2;
+}
+
+.container .articulos{
+     display:flex;
+     flex-direction: row;
+     
+     .padding_container
+}
+
+.col{
+     background-color:@color-card;
+     width: 500px;
+     height: @height-banner;
+     padding:30px 20px;
+     .borde_redondos
+}
+#banner {
+     width: @width-banner;
+     height: @height-banner;
+     padding:30px 20px;
+ }
+ .articulo{
+      margin-right:@margin_right;
+ }
