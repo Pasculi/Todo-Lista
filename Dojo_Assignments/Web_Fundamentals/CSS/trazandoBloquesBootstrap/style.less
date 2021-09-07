@@ -1,0 +1,55 @@
+@colorfont: #fff;
+@header-h: 200px;
+@sidebar-h: 300px;
+@articulo-h: 400px;
+@color-header: #000;
+@color-sidebar: #23525c;
+@color-footer: #1e5423;
+@color-main: #f4c109;
+@color-articulo: #f8f9fa;
+@font-articulo: #000;
+.margenHs {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+h1,
+h3,
+h5 {
+  .margenHs();
+}
+.header {
+  height: @header-h;
+  background-color: @color-header;
+  margin-bottom: 10px;
+  padding: 50px 350px 10px 350px;
+}
+.header h1 {
+  background-color: @color-sidebar;
+  padding: 25px 15px;
+}
+body {
+  color: @colorfont;
+}
+
+#cabcera {
+  width: 200px;
+}
+
+.sidebar {
+  height: @sidebar-h;
+  background-color: @color-sidebar;
+  margin-right: 10px;
+}
+.articulo {
+  height: @articulo-h;
+  background-color: @color-articulo;
+  color: @font-articulo;
+  margin: 5px;
+}
+.main {
+  background-color: @color-main;
+  margin-bottom: 10px;
+}
+.footer {
+  background-color: @color-footer;
+}
