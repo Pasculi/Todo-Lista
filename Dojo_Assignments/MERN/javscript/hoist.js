@@ -1,7 +1,7 @@
 var hello;
 console.log(hello)
 hello="world";  
-R undefined
+//R undefined
 
 var needle = 'haystack';
 function test(){
@@ -9,7 +9,7 @@ function test(){
     console.log(needle);
 }
 test();
-R magnet
+//R magnet
 
 var brendan = 'super cool';
 function print(){
@@ -17,7 +17,7 @@ function print(){
     console.log(brendan);
 }
 console.log(brendan);
-R super cool
+//R super cool
 
 var food = 'chicken';
 console.log(food);
@@ -28,7 +28,7 @@ function eat(){
     
 }
 eat();
-R. chicken, half-chicken
+//R. chicken, half-chicken
 
 
 
@@ -42,7 +42,7 @@ mean();
 console.log(food);
 console.log(food);
 
-R. chichen, fish -> food afuera no existe=chichen, chichen
+//R. chichen, fish -> food afuera no existe=chichen, chichen
 
 var genre = "disco";
 console.log(genre);
@@ -89,4 +89,4 @@ console.log(makeDojo("Chicago", 65));
 console.log(makeDojo("Berkeley", 0));
 
 
-R. name: 'Chicago', students: 65, hiring: true
+//R. name: 'Chicago', students: 65, hiring: true
