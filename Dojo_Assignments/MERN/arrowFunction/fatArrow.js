@@ -1,3 +1,4 @@
+/*
 function suma(a,b){
      return a+b;
 }
@@ -12,4 +13,10 @@ var sayHello = function(name) {
      console.log('Hello ' + name);
    };
 
-const sayHello =(name)=>console.log("Hello" + name)
+const sayHello =(name)=>console.log("Hello" + name);
+*/
+var colores=['blanco', 'negro','azul'];
+
+colores.forEach(function(color){
+     console.log(color);
+})
