@@ -14,6 +14,7 @@ class Ninja{
      }
      drinkSake (){
           this.salud+=10;
+          console.log(`Su salud ahora es de: ${this.salud}`)
      } 
 }
 
