@@ -1,6 +1,6 @@
   
 class Ninja{
-     constructor(nombre, salud, velocidad, fuerza){
+     constructor(nombre, salud){
           this.nombre = nombre;
           this.salud = salud;
           this.velocidad = 3
@@ -18,7 +18,8 @@ Ninja.prototype.showStats = function (){
      console.log(`El nombre del ninja: ${this.nombre} - Fuerza: ${this.fuerza} - Velocidad: ${this.velocidad} - Salud: ${this.salud}`);
 }
 Ninja.prototype.drinkSake = function () {
-     this.salud+=10;
+     this.salud+=10
+     console.log(`Mi nombre es ${this.nombre} y tengo salud de ${this.salud}`);
 }
 
 //Herencia prototipica
@@ -34,7 +35,7 @@ Ninja.prototype.speakWisdom = function (){
      console.log(`Yo soy un Sensei: ${this.nombre}`);
 
 }
-const ninja2 = new Sensei("Akira", 100);
+const ninja2 = new Sensei("Akira", 120);
 const ninja1 = new Ninja("Sekigahara", 100);
 
 ninja1.sayName();
@@ -42,3 +43,4 @@ ninja2.sayName();
 ninja1.showStats();
 ninja1.drinkSake();
 ninja2.speakWisdom();
+ninja2.drinkSake();
