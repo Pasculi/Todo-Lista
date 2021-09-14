@@ -32,11 +32,12 @@ class Sensei extends Ninja{
      }
 }
 Ninja.prototype.speakWisdom = function (){
-     console.log(`Yo soy un Sensei: ${this.nombre}`);
+     console.log(`Yo soy un Sensei: ${this.nombre} y mi sabiduría es de ${this.sabiduria}`);
 
 }
-const ninja2 = new Sensei("Akira", 120);
 const ninja1 = new Ninja("Sekigahara", 100);
+const ninja2 = new Sensei("Akira", 120);
+
 
 ninja1.sayName();
 ninja2.sayName();
