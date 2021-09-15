@@ -24,8 +24,11 @@ const pokemon = Object.freeze([
          { "id": 148, "name": "Dragonair",  "types": ["dragon"] }
      ]);
 
-     const bListPkmn = pokemon.filter( p => p.name[0] === "B" );
-     console.log(bListPkmn);  
+     const bListPkmn = pokemon.filter( p => p.name.includes("B") );
+     console.log(bListPkmn); 
+
+     const bListPkmn1 = pokemon.filter( p => p.name[0] === "B" );
+     console.log(bListPkmn1); 
 
      const pkmnIds = pokemon.map( p => p.id )
      console.log(pkmnIds); 
@@ -35,8 +38,11 @@ const pokemon = Object.freeze([
      console.log(div3Pkm); 
 
      //una serie de objetos Pokémon que son del tipo "fuego"
-     const typeFire = pokemon.filter(p => p.types[0] == "fire");
+     const typeFire = pokemon.filter(p => p.types.includes("fire"));
      console.log(typeFire); 
+
+     const typesFire = pokemon.filter(p => p.types.includes("fire"));
+     console.log(typesFire); 
 
      //Una variedad de objetos Pokémon que tienen más de un tipo
      const masDeUnTipo = pokemon.filter(p => p.types.length > 1);
@@ -51,14 +57,15 @@ const pokemon = Object.freeze([
      console.log(nameId99);
  
      //una matriz con solo los nombres del pokémon cuyo único tipo es veneno
-     const nameVeneno = pokemon.filter(p => p.types == "poison" ? p.name:p.types[0] == "poison" || p.types [1] == "poison").map(p => p.name);
+     const nameVeneno = pokemon.filter(p => p.types === "poison" ? p.name : p.types[0] ==="poison" || p.types[1] === "poison").map(p => p.name);
      console.log(nameVeneno);
+     
 
      //una matriz que contiene solo el primer tipo de todos los Pokémon cuyo segundo tipo es "volador"
-     const primerVolador = pokemon.filter((p) => p.types[1] == "flying").map(p => p.name).slice(0,1);
+     const primerVolador = pokemon.filter((p) => p.types.includes( "flying")).map(p => p.name).slice(0,1);
      console.log(primerVolador);
 
      //un recuento de la cantidad de pokémon que son de tipo "normal"
 
-     const pkmNormal = pokemon.filter((p) => p.types[0] == "normal" || p.types[1] == "normal");
+     const pkmNormal = pokemon.filter((p) => p.types.includes("normal")  || p.types.includes("normal"));
      console.log(pkmNormal.length);

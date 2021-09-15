@@ -13,11 +13,12 @@ class Usuarios {
     this.saldo -= 100;
     console.log(`Su saldo es de: ${this.saldo}`);
   }
+  
 }
 
 const user1 = new Usuarios("Claudio", 30, "12.339.247-k", 25000);
 const user2 = new Usuarios("Andrés", 25, "11.111.111-8", 36890);
-const user3 = new Usuarios("Claudio", 30, "12.222.242-3", 18250);
+const user3 = new Usuarios("Jorge", 30, "12.222.242-3", 18250);
 
 user1.abono();
 user1.descontar();
@@ -38,7 +39,8 @@ const sinEdad = (Usuarios) =>
 
 console.log(sinEdad(users));
 
-
+/*
 const filtrar = (Usuarios) => users.filter((user) =>{
   const {}
 })
+*/
