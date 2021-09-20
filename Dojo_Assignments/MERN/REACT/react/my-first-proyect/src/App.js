@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1 class="display-2">Formulario con RACT</h1>
+      La hora actual es: {new Date().toLocaleTimeString()}
       
         <img src={logo} className="App-logo" alt="logo" />
      
