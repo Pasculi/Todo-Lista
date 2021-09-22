@@ -39,6 +39,6 @@ const sinEdad = (Usuarios) =>
 console.log(sinEdad(users));
 
 
-const filtrar = (Usuarios) => users.filter((user) =>{
-  const {}
-})
+const filtrar = users.filter(user => saldo > 20000);
+
+console.log(filtrar);
