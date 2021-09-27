@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-
-
 const Login = (props) => {
 
     const {age, setAge} = props;
