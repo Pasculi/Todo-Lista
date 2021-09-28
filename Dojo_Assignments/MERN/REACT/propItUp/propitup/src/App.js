@@ -1,11 +1,12 @@
-import PersonCard from './views/PropItUp'
 import './App.css';
+import PersonCards from './views/PersonCards';
+
 
 function App() {
   return (
     <div className="App">
-      <PersonCard primerNombre = {'Jane'} primerApellido= {'Doe'} edad = {45} pelo = {'Black'}/>
-      <PersonCard primerNombre = {'John'} primerApellido= {'Smith'} edad = {88} pelo = {'Brown'}/>
+      <PersonCards firstName="Jane" lastName="Doe" age={45} hairColor='Black'  />
+      <PersonCards firstName="John" lastName="Smith" age={88} hairColor='Brown'  />          
     </div>
   );
 }
