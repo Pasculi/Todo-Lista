@@ -25,6 +25,7 @@ class Home extends Component{
                 <p>Edad: {age}</p>
                 <p>Direccion: {address}</p>
                 <button onClick={() => this.setState({user: {...this.state.user, age: age + 1} }) }>Aumentar edad</button>
+                
             </div>
         );
     }
