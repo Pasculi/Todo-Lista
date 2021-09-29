@@ -4,7 +4,9 @@ import Login from './views/Login'
 
 
 function App() {
-  const [txt, setTxt, password, setPassword, confirm, setConfirm] = useState('');
+  const [txt, setTxt] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirm, setConfirm] = useState('');
   
   return (
     <div className="App">
