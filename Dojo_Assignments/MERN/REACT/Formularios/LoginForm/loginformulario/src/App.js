@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
 import './App.css';
+import Espejo from './views/Espejo';
 import Login from './views/Login';
+
+
+
 function App() {
-  const [txt, setTxt] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirm, setConfirm] = useState('');
   return (
     <div className="App">
-      <Login txt={txt} setTxt={setTxt} password={password} setPassword={setPassword} confirm={confirm} setConfirm={setConfirm}/>
+    
+      <Login />
+
+
+
     </div>
   );
 }
