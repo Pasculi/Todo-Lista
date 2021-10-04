@@ -1,20 +1,24 @@
+import React, { useState } from 'react';
+import Registro from './views/Registro';
+import Espejo from './views/Espejo';
 import './App.css';
-import Login from './views/Login';
-
 
 
 function App() {
-<<<<<<< HEAD
-  return (
-    <div className="App">
-      <h1>GTD Telsur</h1>
-      <Login msg='Yo soy un props desde la App.js'/>
-=======
+
+
+  const [state, setState] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  });
 
   return (
     <div className="App">
-      <Login />
->>>>>>> a47012b518816f3118e55848f1b11ad297c67921
+      <Registro inputs={state} setInputs={setState} />
+      <Espejo info={state} />
     </div>
   );
 }
