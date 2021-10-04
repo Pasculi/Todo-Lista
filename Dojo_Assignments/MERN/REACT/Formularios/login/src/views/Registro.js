@@ -25,11 +25,11 @@ const Registro = (props) => {
                 </div><br />
                 <div className="form-group">
                     <label htmlFor="password">Contraseña</label>
-                    <input onChange={onChange} type="text" name="password"></input>
+                    <input onChange={onChange} type="password" name="password"></input>
                 </div><br />
                 <div className="form-group">
                     <label htmlFor="confirmPassword">Confirmar Contraseña</label>
-                    <input onChange={onChange} type="text" name="confirmPassword"></input>
+                    <input onChange={onChange} type="password" name="confirmPassword"></input>
                 </div>
             </form>
 
