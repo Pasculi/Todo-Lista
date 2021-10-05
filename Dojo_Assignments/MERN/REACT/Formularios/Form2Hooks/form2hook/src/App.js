@@ -6,11 +6,11 @@ import Results from './Views/Results';
 
 function App() {
   const[person, setPerson] = useState({
-    nombre: ' ',
-    apellido: ' ',
-    email: ' ',
-    password: ' ',
-    confirmPassword: ' '
+    nombre: '',
+    apellido: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
   });
   return (
     <div className="App">

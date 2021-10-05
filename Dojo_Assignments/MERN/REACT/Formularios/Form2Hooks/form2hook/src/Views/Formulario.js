@@ -24,18 +24,18 @@ const Formulario = (props) => {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control value={inputForm.email} onChange={handleChange} name='email' type="email" placeholder="Enter email" />
+                    <Form.Control value={inputForm.email} onChange={handleChange} name='email' type="email" placeholder="Ingrese su email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control value={inputForm.password} onChange={handleChange} name='password' type="password" placeholder="Imgrese su Password" />
+                    <Form.Control value={inputForm.password} onChange={handleChange} name="password" type="password" placeholder="Ingrese su contraseña"  />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Confirmar password</Form.Label>
-                    <Form.Control value={inputForm.confirmPassword} onChange={handleChange} name='confirmPassword' type="password" placeholder="Confirme su password" />
+                    <Form.Control value={inputForm.confirmPassword} onChange={handleChange} name="confirmPassword" type="password" placeholder="Confirme su contraseña" />
                 </Form.Group>
-                <Button variant="success">Enviar</Button>{' '}
+                <Button variant="danger">Enviar</Button>{' '}
             </Form>
         </div>
     )

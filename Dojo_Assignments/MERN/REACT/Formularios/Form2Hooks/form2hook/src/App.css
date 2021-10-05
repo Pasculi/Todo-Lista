@@ -3,8 +3,21 @@
 }
 
 .card-container {
+  text-align: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   width: 60%;
   margin: 5% auto;
   border-radius: 5px;
+  padding: 10px 80px  20px 80px;
+
+}
+.form-center{
+  margin: auto;
+}
+.center{
+  margin: auto;
+  padding: 10px 80px  20px 180px;
+}
+span{
+  font-style: oblique;
 }
