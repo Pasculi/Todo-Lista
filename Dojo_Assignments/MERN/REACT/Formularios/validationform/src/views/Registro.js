@@ -1,6 +1,5 @@
-import React from 'react'
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
+import React from 'react';
+import Form from 'react-bootstrap/Form';
 
 const Registro = () => {
     return (
@@ -8,40 +7,40 @@ const Registro = () => {
             <h1>Registro de usuario</h1>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Nombre</Form.Label>
-                    <Form.Control type="text" placeholder="Ingrese su nombre" />
+                    <Form.Label htmlFor="firstName" className="etiqueta">Nombre:</Form.Label>
+                    <Form.Control id="firstName" className="input" type="text" placeholder="Ingrese su nombre" />
                     <Form.Text className="text-muted">
                         <p className="danger">El campo debe tener al menos 2 caracteres.</p>
                     </Form.Text>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Apellido</Form.Label>
-                    <Form.Control type="text" placeholder="Ingrese su apellido" />
+                    <Form.Label htmlFor="lastName" className="etiqueta">Apellido:</Form.Label>
+                    <Form.Control id="lastName" className="input" type="text" placeholder="Ingrese su apellido" />
                     <Form.Text className="text-muted">
                         <p className="danger">El campo debe tener al menos 2 caracteres.</p>
                     </Form.Text>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Label htmlFor="email" className="etiqueta">Email:</Form.Label>
+                    <Form.Control id="email" className="input" type="email" placeholder="Ingrese un email" />
                     <Form.Text className="text-muted">
                         <p className="danger">El campo debe tener al menos 5 caracteres.</p>
                     </Form.Text>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Contraseña</Form.Label>
-                    <Form.Control type="password" placeholder="Ingrese una contraseña" />
+                    <Form.Label htmlFor="password" className="etiqueta">Contraseña:</Form.Label>
+                    <Form.Control id="password" className="input" type="password" placeholder="Ingrese una contraseña" />
                     <Form.Text className="text-muted">
                         <p className="danger">El campo debe tener al menos 8 caracteres.</p>
                     </Form.Text>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Confirme contraseña</Form.Label>
-                    <Form.Control type="password" placeholder="Confirmar contraseña" />
+                    <Form.Label htmlFor="confirmPassword" className="etiqueta">Confirme contraseña:</Form.Label>
+                    <Form.Control id="confirmPassword" className="input" type="password" placeholder="Confirmar contraseña" />
                     <Form.Text className="text-muted">
                         <p className="danger">Las contraseñas no coiciden.</p>
                     </Form.Text>
@@ -52,5 +51,6 @@ const Registro = () => {
         </div>
     )
 }
+
 
 export default Registro;

@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Registro from './views/Registro';
 
 function App() {
@@ -8,5 +8,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
