@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import FormularioInicioSesion from './views/FormularioInicioSesion';
 //import Arrays from './views/Arrays';
 //import { Titulos } from './views/Titulos';
 import User from './views/Usuario';
 
 
 const App = () => {
-  const [session, cambiaSession] = useState(true);
+  const [session, cambiaSession] = useState(false);
 
 
   return (
@@ -18,7 +19,8 @@ const App = () => {
         :
         <div>
           <h2>No has iniciado sesion</h2>
-          <button onClick={() => cambiaSession(true)}>Iniciar Sesion</button>
+          <FormularioInicioSesion />
+          {/*<button onClick={() => cambiaSession(true)}>Iniciar Sesion</button>*/}
         </div>
       }
     </>
