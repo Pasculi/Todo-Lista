@@ -4,12 +4,8 @@ const Contador = (props) => {
 
     const [inicial, setInicial] = useState(0);
 
-    const incrementa = (numero) => {
-        setInicial (inicial + numero);
-    }
-    const decrementa = (numero) => {
-        setInicial(inicial - numero);
-    }
+    const incrementa = (numero) => setInicial (inicial + numero)
+    const decrementa = (numero) => setInicial(inicial - numero)
 
     return (
         <div>
