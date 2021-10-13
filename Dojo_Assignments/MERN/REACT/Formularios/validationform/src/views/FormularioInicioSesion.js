@@ -11,8 +11,10 @@ const FormularioInicioSesion = () => {
         confirmPassword: '',
     });
 
+
     //Estado de los errores
     const [errMsg, setErrMsg] = useState('');
+    
 
     //Funcion para detectar escritura en un input
     const handleChange = (e) => {

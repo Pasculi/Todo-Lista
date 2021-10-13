@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //import React, { useState } from 'react';
 //import Contador from './views/Contador';
 //import FormularioInicioSesion from './views/FormularioInicioSesion';
@@ -14,10 +15,17 @@ const App = () => {
   return (
     <>
     <AxiosAPI />
-    </>
+=======
+import './App.css';
+import FormularioUsuario from './views/FormularioUsuario';
 
+const App = () => {
+
+  return (
+    <>
+      <FormularioUsuario />
+>>>>>>> 10e3efc859a307dd9b2b40830c9b15afc682de27
+    </>
   );
 }
-
-
 export default App;
