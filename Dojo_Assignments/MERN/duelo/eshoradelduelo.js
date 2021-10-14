@@ -21,13 +21,6 @@ class Unidad extends Carta {
         }
     }
 
-    //opción de sintaxis rápida
-    /* atacar(target) {
-      if (!(target instanceof Unidad)) throw Error("Sólo puedo atacar a otra carta de Unidad");
-      console.log(`${this.nombre} ha atacado a ${target.nombre}`);
-      target.res = target.res - this.poder;
-    } */
-
 }
 
 class Efecto extends Carta {
