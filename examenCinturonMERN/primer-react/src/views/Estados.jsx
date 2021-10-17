@@ -5,22 +5,22 @@ class Estados extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            position: "On";
+            position: "On"
         };
     }
 
     render() {
         const onClick = () => {
-            (this.state.position === "On") ? this.setState({ position: "Off" }) : this.setState({ position: "Of" })
+            (this.state.position === "On") ? this.setState({ position: "Off" }) : this.setState({ position: "On" })
         }
         return (
             <>
-            <fieldset>
-                <p>The light is currently {this.state.position}</p>
-                
-                <button onClick={ () => { this.setState({ position: "Off" }) }} >Flip Switch</button>
-            </fieldset>
-        
+                <fieldset>
+                    <p>La luz esta actualmente en {this.state.position}</p>
+
+                    <button onClick={onClick} >Interruptor</button>
+                </fieldset>
+
             </>
         );
     }
