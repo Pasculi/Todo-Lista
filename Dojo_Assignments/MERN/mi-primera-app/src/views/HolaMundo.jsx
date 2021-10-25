@@ -10,3 +10,12 @@ const HolaMundo = () => {
 }
 
 export default HolaMundo
+
+export const Adios = () => {
+    return (
+        <div>
+            <h1>Adios Mundo</h1>
+            <h2>Jorge Sepúlveda</h2>
+        </div>
+    )
+}

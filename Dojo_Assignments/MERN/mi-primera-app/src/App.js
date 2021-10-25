@@ -1,10 +1,22 @@
 import './App.css';
-import HolaMundo from './views/HolaMundo';
+import Saludar from './views/Saludar';
 
 function App() {
+
+  const user = {
+    nombre: 'Jorge',
+    edad: 48,
+    color: 'Verde'
+  }
+  const Saludo = () => {
+    alert(`Hola como estas ${user.nombre}`)
+}
+ 
   return (
     <div className="App">
-      <HolaMundo />
+
+      <Saludar userInfo={user} greet={Saludo} />
+      
     </div>
   );
 }
