@@ -10,13 +10,13 @@ function App() {
   }
   const Saludo = () => {
     alert(`Hola como estas ${user.nombre}`)
-}
- 
+  }
+
   return (
     <div className="App">
 
       <Saludar userInfo={user} greet={Saludo} />
-      
+
     </div>
   );
 }
