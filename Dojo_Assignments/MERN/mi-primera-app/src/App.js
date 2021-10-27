@@ -8,8 +8,8 @@ function App() {
     edad: 48,
     color: 'Verde'
   }
-  const Saludo = () => {
-    alert(`Hola como estas ${user.nombre}`)
+  const Saludo = (nombre, color) => {
+    console.log(`Hola como estas ${nombre} ${color}`)
 }
  
   return (
