@@ -1,14 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react';
 import './App.scss';
-import TodoForm from './views/TodoForm';
-import TodoList from './views/TodoList';
+import { ListProvider } from './contexts/ListContext';
+import ToDoForm from './views/TodoForm';
+import ToDoList from './views/TodoList';
+
 
 function App() {
-  const [todoList, setTodoList] = useState([]);
+  
   return (
     <div className="App">
-      <TodoForm todoList={todoList} setTodoList={setTodoList} />
-      <TodoList list={todoList}  />
+      <ListProvider>
+        <ToDoForm />
+        <ToDoList />
+      </ListProvider>
+
     </div>
   );
 }
